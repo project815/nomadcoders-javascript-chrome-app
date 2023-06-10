@@ -5,12 +5,6 @@ const playerFat = "little bit";
 
 console.log();
 
-player.name;
-player.points;
-player.handsome;
-
-//>>
-
 //player[0] == name
 //p;ayer[1] == points
 //...
@@ -23,3 +17,16 @@ const player1 = {
   handsome: false,
   playerFat: "little bit",
 };
+
+console.log(player1);
+console.log(player1.name);
+console.log(player1["name"]);
+
+player1.name = "song";
+
+console.log(player1.name);
+
+// player1 = "?"; constansts
+player1.lastName = "pototo";
+
+console.log(player1);
