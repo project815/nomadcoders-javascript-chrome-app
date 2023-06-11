@@ -1,20 +1,7 @@
-const calculator = {
-  plus: function (a, b) {
-    alert(a + b);
-  },
-  minus: function (a, b) {
-    alert(a - b);
-  },
-  times: function (a, b) {
-    alert(a * b);
-  },
-  divide: function (a, b) {
-    alert(a / b);
-  },
-  power: function (a, b) {
-    alert(a ** b);
-  },
-};
+const age = 96;
+function calculateKrAge(ageOFForeigner) {
+  return ageOFForeigner + 2;
+}
 
-calculator.plus(1, 2);
-console.log(calculator.plus(1, 2));
+const krAge = calculateKrAge(age);
+console.log(krAge);
