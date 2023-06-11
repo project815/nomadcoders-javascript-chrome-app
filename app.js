@@ -1,7 +1,11 @@
-const age = 96;
-function calculateKrAge(ageOFForeigner) {
-  return ageOFForeigner + 2;
-}
+const age = parseInt(prompt("how old are you"));
+console.log(typeof "15", typeof age, typeof parseInt(age));
 
-const krAge = calculateKrAge(age);
-console.log(krAge);
+console.log(age);
+console.log(isNaN(age));
+
+if (isNaN(age)) {
+  console.log("Please write a number");
+} else {
+  console.log("Thank you for writing your age");
+}
