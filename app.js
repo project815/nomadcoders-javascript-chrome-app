@@ -16,12 +16,15 @@ console.dir(h1);
 // };
 
 function changeColor() {
-  const clickedCloss = "clicked";
+  const clickedClass = "clicked";
   console.log("click");
-  if (h1.className === clickedCloss) {
-    h1.className = "";
-  } else {
-    h1.className = clickedCloss; //상수가 정해짐. - 좋은 방법은 아님. 모든 className를 정리하지 않았으면 좋겠다는 생각을 한다.
-  }
+  // if (h1.classList.contains(clickedClass)) {
+  //   h1.classList.remove(clickedClass);
+  // } else {
+  //   h1.classList.add(clickedClass);
+  // }
+
+  //toggle을 사용하면 위에 다섯 줄 해결 가능
+  h1.classList.toggle("clicked");
 }
 h1.addEventListener("click", changeColor);
