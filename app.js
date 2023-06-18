@@ -10,6 +10,12 @@ function onLoginBtnClick() {
   console.dir(loginInput);
   console.log("Clcik");
   console.log("clcike : ", loginInput.value);
+
+  // check user  >> css requried maxlength
+  // const username = loginInput.value;
+  // if (username === "") {
+  //   alert("Please write your name");
+  // } else if (username.length > 15) alert("You name is too long");
 }
 
 loginButton.addEventListener("click", onLoginBtnClick);
