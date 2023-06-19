@@ -6,10 +6,12 @@ const loginInput = loginForm.querySelector("input");
 const loginButton = loginForm.querySelector("button");
 // == const loginButton = document.querySelector("#login-form button");
 
-function onLoginBtnClick() {
-  console.dir(loginInput);
-  console.log("Clcik");
-  console.log("clcike : ", loginInput.value);
+function onLoginBtnClick(info) {
+  info.preventDefault();
+  console.log(info);
+  // console.dir(loginInput);
+  // console.log("Clcik");
+  // console.log("clcike : ",/ loginInput.value);
 
   // check user  >> css requried maxlength
   // const username = loginInput.value;
@@ -18,4 +20,8 @@ function onLoginBtnClick() {
   // } else if (username.length > 15) alert("You name is too long");
 }
 
-loginButton.addEventListener("click", onLoginBtnClick);
+// loginButton.addEventListener("click", onLoginBtnClick);
+
+loginForm.addEventListener("submit", onLoginBtnClick);
+
+onLoginBtnClick();
