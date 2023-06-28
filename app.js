@@ -24,3 +24,5 @@ loginForm.addEventListener("submit", onLoginSubmit);
 link.addEventListener("click", handleLinkClick);
 
 // handleLinkClick({information about the event that just happened})
+localStorage.setItem("username", "nico");
+localStorage.getItem("username");
